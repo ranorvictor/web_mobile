@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Título da página</title>
+        <script type="text/javascript" src="funcoes.js">
+        </script>
+    </head>
+    <body>
+        <h1>Primeiro cabeçalho</h1>
+        <h2>Segundo cabeçalho</h2>
+        <h3>Terceiro cabeçalho</h3>
+        <p>Primeiro paragrafo</p>
+        <img src="/img/espresso.jpeg" title="Sabrina carpenter espresso" height="100" width="100">
+        <a href="http://www.sabrinacarpenter.com/" target="blank">Primeiro Link</a>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <table>
+            <caption>Descrição da tabela</caption>
+            <thead>
+                <tr>
+                    <td>coluna 1</td>
+                    <td>coluna 2</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>linha 1</td>
+                    <td>linha 1</td>
+                </tr>
+                <tr>
+                    <td>linha 2</td>
+                    <td>linha 2</td>
+                </tr>
+            </tbody>
+        </table>
+        <span>111111</span>
+        <span>222222</span>
+        <span>333333</span>        
+        <span>444444</span>
+        <div>Várias divs</div>
+        <div>Várias divs 2</div>
+
+        <form action="/cadastro/" method="post">
+
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="Login" placeholder="Digite seu usuário">
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="Senha" placeholder="Digite sua senha">
+
+            <label for="radio">Sexo:</label>
+            <input type="radio" id="radio" name="Sexo" value="1" checked>Masculino
+            <input type="radio" id="radio" name="Sexo" value="2" checked>Feminino
+            <input type="radio" id="radio" name="Sexo" value="3" checked>Outros
+
+            <label for="checkbox">Veículo:</label>
+            <input type="checkbox" id="checkbox" name="veiculo1" value="bicicleta" checked>Eu tenho uma Bicicleta
+            <input type="checkbox" id="checkbox" name="veiculo2" value="carro" checked>Eu tenho um Carro
+
+            <label for="curso">Curso:</label>
+            <select name="curso" id="curso">
+                <option value="1">Ciência da Computação</option>
+                <option value="2">Escrita Criativa</option>
+                <option value="3">Música</option>
+            </select>
+
+            Mensagem:<textarea name="message" rows="10" cols="30"></textarea>
+
+            Idade<input type="number" name="idade" min="0" max="100" step="1" value="10">
+            Data de Nascimento<input type="date" name="data_de_nascimento">
+
+            Auto Complete: <input list="artistas">
+            <datalist id="artistas">
+                <option>Sabrina Carpenter</option>
+                <option>Olivia Rodrigo</option>
+                <option>Billie Eilish</option>
+                <option>Taylor Swift</option>
+                <option>Charli XCX</option>
+            </datalist>
+
+            <input type="hidden" name="country" value="Brasil">
+
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+
+            <button type="button" onclick="alert('Olá sabrinete!')">Botão 1</button>
+            <button type="button" onclick="soma(5,15)">Botão 2</button>
+
+        </form>
+        
+    </body>
+</html>
